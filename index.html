@@ -1,230 +1,319 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Jason Khoo's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason Khoo | Data Analytics Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      /* Custom styles for the scroll reveal animation */
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      /* Smooth opening for the details/summary accordion */
+      details > summary { list-style: none; }
+      details > summary::-webkit-details-marker { display: none; }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 selection:text-blue-900">
+    
+    <!-- Hero Section -->
+    <header class="bg-white border-b border-slate-200 relative overflow-hidden">
+      <!-- Decorative background gradient blob -->
+      <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 opacity-30 pointer-events-none">
+          <div class="absolute -top-[20%] -right-[10%] w-[50%] h-[100%] rounded-full bg-gradient-to-b from-blue-50 to-transparent blur-3xl"></div>
+      </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+      <div class="max-w-5xl mx-auto px-6 py-24 reveal active">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4">
+          Jason Khoo
+        </h1>
+        
+        <!-- Credentials in Pills -->
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+          <span class="px-4 py-1.5 bg-slate-100 text-slate-700 text-sm font-semibold rounded-full border border-slate-200 shadow-sm">CMA (US)</span>
+          <span class="px-4 py-1.5 bg-slate-100 text-slate-700 text-sm font-semibold rounded-full border border-slate-200 shadow-sm">NTU MSc (Information Systems)</span>
+        </div>
+        
+        <p class="text-lg text-slate-600 max-w-3xl leading-relaxed">
+          <strong class="font-semibold text-slate-800">Data Analytics Engineer</strong> with experience in building scalable data
+          infrastructure and machine learning solutions within the financial and
+          tax compliance domains. Specialised in executing legacy-to-cloud
+          migrations, optimising PySpark ETL pipelines, and deploying LLM
+          automation frameworks. Proven track record of bridging the gap between
+          technical data engineering and strategic operational insights.
+        </p>
+      </div>
+    </header>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Jason Khoo<br />
-						Portfolio</h1>
-						<p>An Aspiring Data Analyst learning Python, SQL and Tableau.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-24">
+      
+      <!-- Category 1: Data Engineering & Analytics -->
+      <section class="reveal">
+        <h3 class="text-2xl font-bold border-b-2 border-blue-600 pb-2 mb-8 inline-block">
+          Data Engineering & Analytics
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Project Card -->
+          <a href="https://jasonkyh.github.io/webportfolio-ntuci/" target="_blank" class="group flex flex-col justify-between p-6 bg-white rounded-xl border border-slate-200 hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
+            <div>
+                <h4 class="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">Polars@Scale</h4>
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                An end-to-end data engineering and NLP pipeline that scrapes, cleans, and analyzes over 27,000 hotel reviews, rigorously benchmarking Polars against Pandas.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">Polars</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">Pandas</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">NLP</span>
+                </div>
+            </div>
+            <span class="text-blue-600 font-medium text-sm inline-flex items-center">
+                View Project 
+                <span class="ml-1 transition-transform duration-300 group-hover:translate-x-2">&rarr;</span>
+            </span>
+          </a>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
-					</header>
+          <!-- Project Card -->
+          <a href="https://jasonkyh.github.io/webportfolio-ntucloud/" target="_blank" class="group flex flex-col justify-between p-6 bg-white rounded-xl border border-slate-200 hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
+            <div>
+                <h4 class="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">Cloud Computing & Infrastructure</h4>
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                A data-driven comparative analysis of AWS, Azure, and Google Cloud market shares, service strategies, and architectural philosophies.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">AWS</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">Azure</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">GCP</span>
+                </div>
+            </div>
+            <span class="text-blue-600 font-medium text-sm inline-flex items-center">
+                View Project 
+                <span class="ml-1 transition-transform duration-300 group-hover:translate-x-2">&rarr;</span>
+            </span>
+          </a>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/jasonkhooyh/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/jasonkyh" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+          <!-- Project Card -->
+          <a href="https://jasonkyh.github.io/webportfolio-ntuip/" target="_blank" class="group flex flex-col justify-between p-6 bg-white rounded-xl border border-slate-200 hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
+            <div>
+                <h4 class="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">Social Graph API Integration</h4>
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                A developer guide and technical implementation of Facebook, X, and TikTok APIs, demonstrating real-world OAuth and Graph API integrations for data ingestion.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">OAuth 2.0</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">Graph API</span>
+                </div>
+            </div>
+            <span class="text-blue-600 font-medium text-sm inline-flex items-center">
+                View Project 
+                <span class="ml-1 transition-transform duration-300 group-hover:translate-x-2">&rarr;</span>
+            </span>
+          </a>
+        </div>
+      </section>
 
-				<!-- Main -->
-					<div id="main">
+      <!-- Category 2: Machine Learning & Generative AI -->
+      <section class="reveal">
+        <h3 class="text-2xl font-bold border-b-2 border-purple-600 pb-2 mb-8 inline-block">
+          Machine Learning & Generative AI
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <a href="https://jasonkyh.github.io/webportfolio-ntuappliedai/" target="_blank" class="group flex flex-col justify-between p-6 bg-white rounded-xl border border-slate-200 hover:shadow-xl hover:border-purple-300 hover:-translate-y-1 transition-all duration-300">
+            <div>
+                <h4 class="text-xl font-semibold mb-2 group-hover:text-purple-600 transition-colors">AspectIQ</h4>
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                A hybrid GenAI and deep learning engine pairing Gemini-driven labelling with a fine-tuned multi-label BERT pipeline for complex aspect-based sentiment analysis.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">LLMs</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">BERT</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">Gemini</span>
+                </div>
+            </div>
+            <span class="text-purple-600 font-medium text-sm inline-flex items-center">
+                View Project 
+                <span class="ml-1 transition-transform duration-300 group-hover:translate-x-2">&rarr;</span>
+            </span>
+          </a>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://public.tableau.com/views/CreditCardCustomerChurnRateAnalysis/Story?:language=en-GB&:display_count=n&:origin=viz_share_link">Credit Card Customer and Churn Rate Analysis in Tableau<br />
-									</a></h2>
-									<p>In this project, I've conducted a customer profiling on the credit card customers<br />
-										and developed different customer segments to allow for the design and execution of <br />
-										effective marketing strategies. I've also explored the significant characteristics of <br />
-										attrited customers to aid in strategy formulation for targeted marketing.</p>
-								</header>
-								<a href="https://public.tableau.com/views/CreditCardCustomerChurnRateAnalysis/Story?:language=en-GB&:display_count=n&:origin=viz_share_link" class="image main"><img src="images/creditcard.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://public.tableau.com/views/CreditCardCustomerChurnRateAnalysis/Story?:language=en-GB&:display_count=n&:origin=viz_share_link" class="button large">View Project</a></li>
-								</ul>
-							</article>
+          <a href="https://jasonkyh.github.io/webportfolio-ntugenai/" target="_blank" class="group flex flex-col justify-between p-6 bg-white rounded-xl border border-slate-200 hover:shadow-xl hover:border-purple-300 hover:-translate-y-1 transition-all duration-300">
+            <div>
+                <h4 class="text-xl font-semibold mb-2 group-hover:text-purple-600 transition-colors">Credit-Copilot</h4>
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                A hybrid Generative AI system for commercial credit underwriting, utilizing LangChain, RAG, and fine-tuned edge models to mitigate numerical hallucinations.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">LangChain</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">RAG</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md">Fine-Tuning</span>
+                </div>
+            </div>
+            <span class="text-purple-600 font-medium text-sm inline-flex items-center">
+                View Project 
+                <span class="ml-1 transition-transform duration-300 group-hover:translate-x-2">&rarr;</span>
+            </span>
+          </a>
 
-						<!-- Posts -->
-							<section class="posts">
-	
-								<article>
-									<header>
-										<h2><a href="https://jasonkyh.github.io/webportfolio-insurance/">Unsupervised Learning: <br />Insurance Customer Segmentation <br/> through Cluster Analysis<br /> in Python <br/>
-										</a></h2>
-									</header>
-									<a href="https://jasonkyh.github.io/webportfolio-insurance/" class="image fit"><img src="images/insurance1.jpg" alt="" /></a>
-									<p>In this project, I've explored the use of K-means and K-medoids clustering algorithms to achieve different insurance customer segments for marketing and pricing decisions.</p>
-									<ul class="actions special">
-										<li><a href="https://jasonkyh.github.io/webportfolio-insurance/" class="button">View Project</a></li>
-									</ul>
-								</article>
+        </div>
+      </section>
 
-								<article>
-									<header>
-										<h2><a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%203.%20LendingClub%20Loan%20Data%20Analysis/(3)%20Supervised%20Learning%20using%20Logistic%20Regression.ipynb">Supervised Learning: <br />Logistic Regression  <br/> on the Profitability of Loan Investments <br/> in Python<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%203.%20LendingClub%20Loan%20Data%20Analysis/(3)%20Supervised%20Learning%20using%20Logistic%20Regression.ipynb" class="image fit"><img src="images/classification.jpg" alt="" /></a>
-									<p>In this project, I've explored the use of logistic regression to build a classification model to classify profitable / unprofitable loan investments hosted on LendingClub Peer-to-Peer (P2P) lending platform.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%203.%20LendingClub%20Loan%20Data%20Analysis/(3)%20Supervised%20Learning%20using%20Logistic%20Regression.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
+      <!-- Category 3: Systems Reliability & Security -->
+      <section class="reveal">
+        <h3 class="text-2xl font-bold border-b-2 border-teal-600 pb-2 mb-8 inline-block">
+          Systems Reliability, Security & HCI
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <a href="https://jasonkyh.github.io/webportfolio-ntucyber/" target="_blank" class="group flex flex-col justify-between p-6 bg-white rounded-xl border border-slate-200 hover:shadow-xl hover:border-teal-300 hover:-translate-y-1 transition-all duration-300">
+            <div>
+                <h4 class="text-xl font-semibold mb-2 group-hover:text-teal-600 transition-colors">Cybersecurity</h4>
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                A risk-based penetration test and system-hardening exercise on Metasploitable 2, mapping defensive strategies to the MITRE D3FEND framework.
+                </p>
+            </div>
+            <span class="text-teal-600 font-medium text-sm inline-flex items-center">
+                View Project 
+                <span class="ml-1 transition-transform duration-300 group-hover:translate-x-2">&rarr;</span>
+            </span>
+          </a>
 
-								<article>
-									<header>
-										<h2><a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%203.%20LendingClub%20Loan%20Data%20Analysis/(2)%20Statistical%20Analysis%20on%20the%20Profitability%20and%20Risk%20of%20Peer-to-Peer%20lending%20(P2P)%20Investments.ipynb">Statistical Analysis on the Profitability <br />and Risk in Python<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%203.%20LendingClub%20Loan%20Data%20Analysis/(2)%20Statistical%20Analysis%20on%20the%20Profitability%20and%20Risk%20of%20Peer-to-Peer%20lending%20(P2P)%20Investments.ipynb" class="image fit"><img src="images/loanstats.jpg" alt="" /></a>
-									<p>In this project, I've explored the profitability and the interactions between risk and returns on the loans hosted on LendingClub Peer-to-Peer (P2P) lending platform using Python for statistical analysis.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%203.%20LendingClub%20Loan%20Data%20Analysis/(2)%20Statistical%20Analysis%20on%20the%20Profitability%20and%20Risk%20of%20Peer-to-Peer%20lending%20(P2P)%20Investments.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
+          <a href="https://jasonkyh.github.io/webportfolio-ntuse/" target="_blank" class="group flex flex-col justify-between p-6 bg-white rounded-xl border border-slate-200 hover:shadow-xl hover:border-teal-300 hover:-translate-y-1 transition-all duration-300">
+            <div>
+                <h4 class="text-xl font-semibold mb-2 group-hover:text-teal-600 transition-colors">Software Engineering</h4>
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                Five in-depth case studies spanning generative AI platforms to safety-critical ICU monitors, focusing on system reliability, design patterns, and QA strategies.
+                </p>
+            </div>
+            <span class="text-teal-600 font-medium text-sm inline-flex items-center">
+                View Project 
+                <span class="ml-1 transition-transform duration-300 group-hover:translate-x-2">&rarr;</span>
+            </span>
+          </a>
 
-								<article>
-									<header>
-										<h2><a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%204.%20The%20Global%20Race%20to%20Vaccinate%20against%20COVID-19/The%20Global%20Race%20to%20Vaccinate%20against%20COVID-19.ipynb">Statistical Analysis on the Vaccination Rate <br />against COVID-19 in Python<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%204.%20The%20Global%20Race%20to%20Vaccinate%20against%20COVID-19/The%20Global%20Race%20to%20Vaccinate%20against%20COVID-19.ipynb" class="image fit"><img src="images/vaccine.jpg" alt="" /></a>
-									<p>In this project, I've performed a statistical analysis on the progress of the worldwide vaccination rate against COVID-19 to assess if the WHO's vaccination target for COVID-19 is met.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%204.%20The%20Global%20Race%20to%20Vaccinate%20against%20COVID-19/The%20Global%20Race%20to%20Vaccinate%20against%20COVID-19.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
+          <a href="https://jasonkyh.github.io/webportfolio-ntuhai/" target="_blank" class="group flex flex-col justify-between p-6 bg-white rounded-xl border border-slate-200 hover:shadow-xl hover:border-teal-300 hover:-translate-y-1 transition-all duration-300 md:col-span-2">
+            <div>
+                <h4 class="text-xl font-semibold mb-2 group-hover:text-teal-600 transition-colors">Human AI Interaction</h4>
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed max-w-2xl">
+                An analysis of six real-world AI deployment case studies, examining the cognitive and interactional breakdowns when humans over-rely on automated systems.
+                </p>
+            </div>
+            <span class="text-teal-600 font-medium text-sm inline-flex items-center mt-2">
+                View Project 
+                <span class="ml-1 transition-transform duration-300 group-hover:translate-x-2">&rarr;</span>
+            </span>
+          </a>
 
-								<article>
-									<header>
-										<h2><a href="https://github.com/jasonkyh/portfolio/tree/main/(Python)%201.%20Vehicle%20Rental%20Program">Vehicle Rental <br />Program in Python <br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/jasonkyh/portfolio/tree/main/(Python)%201.%20Vehicle%20Rental%20Program" class="image fit"><img src="images/vehicle.jpg" alt="" /></a>
-									<p>This program was developed to serve the interests of a vehicle rental agency. It allows users to (1) check the different vehicles available for rent, (2) display and get cost estimates on specific vehicle rentals and (3) manage their vehicle reservations.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/jasonkyh/portfolio/tree/main/(Python)%201.%20Vehicle%20Rental%20Program" class="button">View Project</a></li>
-									</ul>
-								</article>
+        </div>
+      </section>
 
-								<article>
-									<header>
-										<h2><a href="https://jasonkyh.github.io/webportfolio-loanrisk/">Exploring Loan Risk and <br />its Determinants in Python <br />
-										</a></h2>
-									</header>
-									<a href="https://jasonkyh.github.io/webportfolio-loanrisk/" class="image fit"><img src="images/loanrisk.jpg" alt="" /></a>
-									<p>In this project, I've explored the critical determinants affecting the risk grade assigned for loans hosted on LendingClub Peer-to-Peer (P2P) lending platform using Python with an emphasis on data wrangling and visualisation.</p>
-									<ul class="actions special">
-										<li><a href="https://jasonkyh.github.io/webportfolio-loanrisk/" class="button">View Project</a></li>
-									</ul>
-								</article>
+      <!-- Archive Section (Interactive Accordion) -->
+      <section class="border-t border-slate-200 pt-16 reveal">
+        <details class="group bg-slate-100 rounded-xl border border-slate-200 overflow-hidden transition-all duration-300">
+          <summary class="p-6 font-semibold text-lg cursor-pointer flex justify-between items-center text-slate-700 hover:text-blue-600 transition-colors focus:outline-none">
+            Archive: Early Career & Previous Work
+            <!-- Animated Arrow for Accordion -->
+            <svg class="w-5 h-5 text-slate-500 transform transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          
+          <div class="px-6 pb-6 border-t border-slate-200/60 pt-6 bg-white/50">
+            <p class="text-slate-600 mb-6 text-sm">
+              Projects completed prior to transitioning into Data Science and Data
+              Engineering. These highlight my foundational experience in software
+              development and analytics.
+            </p>
+            
+            <ul class="flex flex-col space-y-4 text-sm pl-2">
+              <li>
+                <a href="https://public.tableau.com/app/profile/jason8658/viz/CreditCardCustomerChurnRateAnalysis/Story" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors block">Credit Card Customer and Churn Rate Analysis in Tableau</a>
+              </li>
+              <li>
+                <a href="https://jasonkyh.github.io/webportfolio-insurance/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors block">Unsupervised Learning: Insurance Customer Segmentation through Cluster Analysis in Python</a>
+              </li>
+              <li>
+                <a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%203.%20LendingClub%20Loan%20Data%20Analysis/(3)%20Supervised%20Learning%20using%20Logistic%20Regression.ipynb" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors block">Supervised Learning: Logistic Regression on the Profitability of Loan Investments in Python</a>
+              </li>
+              <li>
+                <a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%203.%20LendingClub%20Loan%20Data%20Analysis/(2)%20Statistical%20Analysis%20on%20the%20Profitability%20and%20Risk%20of%20Peer-to-Peer%20lending%20(P2P)%20Investments.ipynb" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors block">Statistical Analysis on the Profitability and Risk in Python</a>
+              </li>
+              <li>
+                <a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%204.%20The%20Global%20Race%20to%20Vaccinate%20against%20COVID-19/The%20Global%20Race%20to%20Vaccinate%20against%20COVID-19.ipynb" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors block">Statistical Analysis on the Vaccination Rate against COVID-19 in Python</a>
+              </li>
+              <li>
+                <a href="https://github.com/jasonkyh/portfolio/tree/main/(Python)%201.%20Vehicle%20Rental%20Program" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors block">Vehicle Rental Program in Python</a>
+              </li>
+              <li>
+                <a href="https://jasonkyh.github.io/webportfolio-loanrisk/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors block">Exploring Loan Risk and its Determinants in Python</a>
+              </li>
+              <li>
+                <a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%202.%20Risk%20and%20Returns%20-%20The%20Sharpe%20Ratio/notebook.ipynb" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors block">Analysis of the Sharpe Ratio in Python</a>
+              </li>
+              <li>
+                <a href="https://github.com/jasonkyh/portfolio/blob/main/(SQL)%201.%20Analyze%20International%20Debt%20Statistics/notebook.ipynb" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors block">Analysis of International Debt Statistics in SQL</a>
+              </li>
+              <li>
+                <a href="https://github.com/jasonkyh/portfolio/blob/main/(SQL)%202.%20What%20and%20Where%20Are%20the%20World's%20Oldest%20Businesses%3F/notebook.ipynb" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors block">Analysis of the World's Oldest Businesses in SQL</a>
+              </li>
+              <li>
+                <a href="https://jasonkyh.github.io/basics-blackjack/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors block">Blackjack Game in Javascript</a>
+              </li>
+            </ul>
+          </div>
+        </details>
+      </section>
+    </main>
 
-								<article>
-									<header>
-										<h2><a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%202.%20Risk%20and%20Returns%20-%20The%20Sharpe%20Ratio/notebook.ipynb">Analysis of the Sharpe <br />Ratio in Python<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%202.%20Risk%20and%20Returns%20-%20The%20Sharpe%20Ratio/notebook.ipynb" class="image fit"><img src="images/stockmarket.jpg" alt="" /></a>
-									<p>This is a datacamp guided project where I used pandas to calculate and compare the profitability and risk of stock investments using the Sharpe Ratio.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/jasonkyh/portfolio/blob/main/(Python)%202.%20Risk%20and%20Returns%20-%20The%20Sharpe%20Ratio/notebook.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 text-center text-sm border-t border-slate-800 mt-10">
+      <p>&copy; 2026 Jason Khoo. All rights reserved.</p>
+      <div class="mt-4 flex justify-center space-x-6">
+        <a href="https://github.com/jasonkyh" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center space-x-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.022 1.531 1.022.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+            <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/jasonkhooyh/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center space-x-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
+            <span>LinkedIn</span>
+        </a>
+      </div>
+    </footer>
 
-								<article>
-									<header>
-										<h2><a href="https://github.com/jasonkyh/portfolio/blob/main/(SQL)%201.%20Analyze%20International%20Debt%20Statistics/notebook.ipynb">Analysis of International <br />Debt Statistics in SQL<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/jasonkyh/portfolio/blob/main/(SQL)%201.%20Analyze%20International%20Debt%20Statistics/notebook.ipynb" class="image fit"><img src="images/debt.jpg" alt="" /></a>
-									<p>This is a datacamp guided project where I used SQL queries to analyse the international debt statistics using the data from The World Bank.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/jasonkyh/portfolio/blob/main/(SQL)%201.%20Analyze%20International%20Debt%20Statistics/notebook.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
-								
-								<article>
-									<header>
-										<h2><a href="https://github.com/jasonkyh/portfolio/blob/main/(SQL)%202.%20What%20and%20Where%20Are%20the%20World's%20Oldest%20Businesses%3F/notebook.ipynb">Analysis of the World's <br />Oldest Business in SQL<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/jasonkyh/portfolio/blob/main/(SQL)%202.%20What%20and%20Where%20Are%20the%20World's%20Oldest%20Businesses%3F/notebook.ipynb" class="image fit"><img src="images/oldbusiness.jpg" alt="" /></a>
-									<p>This is a datacamp guided project where I used SQL queries to explore the oldest businesses around the world.</p><br /> 
-									<ul class="actions special">
-										<li><a href="https://github.com/jasonkyh/portfolio/blob/main/(SQL)%202.%20What%20and%20Where%20Are%20the%20World's%20Oldest%20Businesses%3F/notebook.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
+    <!-- Intersection Observer Script for scroll reveal animations -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const reveals = document.querySelectorAll('.reveal');
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+            }
+          });
+        }, {
+          threshold: 0.1 // Triggers when 10% of the element is visible
+        });
 
-
-								<article>
-									<header>
-										<h2><a href="https://jasonkyh.github.io/basics-blackjack/">Blackjack Game <br />in Javascript<br />
-										</a></h2>
-									</header>
-									<a href="https://jasonkyh.github.io/basics-blackjack/" class="image fit"><img src="images/blackjack.jpg" alt="" /></a>
-									<p>This game was developed as part of the Rocket Academy's Basics course which focuses on Javascript for web applications development. Full code can be found <a href="https://github.com/jasonkyh/basics-blackjack">here</a>.</p>
-									<ul class="actions special">
-										<li><a href="https://jasonkyh.github.io/basics-blackjack/" class="button">Play Game</a></li>
-									</ul>
-								</article>
-			
-							</section>
-
-
-				
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p>
-								Singapore</p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p>jkhooyh@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/jasonkhooyh/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/jasonkyh" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        reveals.forEach(reveal => {
+          observer.observe(reveal);
+        });
+      });
+    </script>
+  </body>
 </html>
